@@ -56,3 +56,4 @@ print(type(s_nombre))
 print(type(NUMEROPI))
 print(type(is_verdadero))
 print(type(is_casado))
+

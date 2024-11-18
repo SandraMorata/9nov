@@ -1,0 +1,74 @@
+s_texto49 = "Aprender Python es divertido, práctico y útil"
+print(s_texto49.split())
+
+s_texto49 = "Aprender Python es divertido, práctico y útil"
+print(s_texto49.split(","))
+
+s_texto50 = " Este texto tiene espacios extra al inicio y al final. "
+print(s_texto50.strip())
+
+s_texto51 = "Python es un lenguaje muy poderoso y versátil"
+resultado=s_texto51.replace ("Python","Javascript").replace("poderoso","popular")
+print(resultado)
+
+s_texto55 = " Quiero separar esta frase en palabras y quitar los espacios "
+print(s_texto55.strip())
+print(s_texto55.split())
+
+#Escribe un programa que tome una cadena y la convierta a mayúsculas utilizando el método upper().
+s_texto100 = "Sandra es guay"
+print(s_texto100.upper())
+#Escribe un programa que cuente cuántas veces aparece una subcadena en una cadena dada usando el método count().
+print(s_texto100.count("a"))
+#Escribe un programa que reemplace todas las apariciones de una subcadena en una cadena dada con otra subcadena utilizando el método replace().
+print(s_texto100.replace("a","A"))
+#Escribe un programa que elimine los espacios en blanco al principio y al final de una cadena utilizando el método strip().
+s_texto101 = "    Sandra es la releche   "
+print(s_texto101.strip())
+"""Escribe un programa que divida una cadena en 
+una lista de palabras utilizando el método split()."""
+print (s_texto101.split())
+"""Escribe un programa que tome una lista de palabras y las una en una sola cadena, separadas por espacios, 
+utilizando el método join()."""
+letras_mi_nombre = ["S","a","n","d","r","a"]
+resultado = " ".join(letras_mi_nombre)
+print(resultado)
+"""Escribe un programa que verifique si una subcadena está presente en una cadena usando el método find() 
+y devuelva su posición."""
+print(s_texto101.find ("Sandra"))
+#Escribe un programa que tome varios valores y los inserte en una cadena utilizando el método format().
+nombre = "Sandra"
+edad = 45
+peso = 56
+mensaje_01="{} tiene {} y pesa {}.".format(nombre,edad,peso)
+print(mensaje_01)
+#Escribe un programa que tome una cadena y la convierta a formato de título utilizando el método title().
+print(s_texto101.title())
+#Escribe un programa que invierta una cadena usando el método [::-1].
+print(mensaje_01[::-1])
+"""Escribe un programa que verifique si una cadena comienza con un prefijo específico 
+usando el método startswith()."""
+s_texto102="Pre mama"
+print(s_texto102.startswith("Pre"))
+#Escribe un programa que verifique si una cadena termina con un sufijo específico usando el método endswith().
+print(s_texto102.endswith("mama"))
+#Escribe un programa que convierta la primera letra de cada palabra en mayúsculas usando el método title().
+s_texto200="sandra se va a jugar al padel ahora"
+print(s_texto200.title())
+"""Escribe un programa que tome varios valores y los inserte en una cadena usando el método format(). 
+Por ejemplo, usa {} como marcadores de posición."""
+nombre = "pulgosa"
+raza = "maltes"
+edad = 8
+mensaje02 = "La {} es un {} y tiene {} a;os.".format(nombre,raza,edad)
+print(mensaje02)
+#Escribe un programa que elimine todos los caracteres específicos de una cadena usando el método replace().
+print(mensaje02.replace("p","H"))
+#Escribe un programa que encuentre la posición de una subcadena específica en una cadena usando el método index().
+s_texto104 = "Tengo que salir de casa en una hora"
+print(s_texto104.index("que"))
+#Escribe un programa que convierta toda la cadena a minúsculas usando el método lower().
+print(s_texto104.lower())
+#Escribe un programa que elimine un sufijo específico de una cadena usando el método removesuffix().
+s_texto150 ="que desaparezca la A de qui"
+print(s_texto150.removesuffix("A"))

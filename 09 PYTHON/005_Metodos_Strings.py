@@ -74,9 +74,3 @@ print(s_texto12.replace("casa", "hogar"))
 
 #   Te invito a que inspecciones el resto de funciones predefinidas para los strings en:
 #   https://www.freecodecamp.org/espanol/news/metodos-de-string-de-python-explicados-con-ejemplo/
-
-
-
-
-
-

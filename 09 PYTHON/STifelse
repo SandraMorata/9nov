@@ -1,0 +1,4 @@
+edad=18
+if edad >=18:
+    PRINT("Eres mayor de edad.")
+    else("Eres menor de edad.")
