@@ -1,0 +1,35 @@
+# Escribe un programa que pregunte al usuario su edad y muestre por pantalla 
+# si es mayor de edad o no.
+
+
+
+# Solicita dos números al usuario y determina cuál de los dos es mayor o si son iguales.
+
+
+
+
+
+
+
+# Escribe un script que solicite una calificación al usuario (0 - 100). 
+# Si la calificación es mayor o igual a 90, imprime "Excelente", si es mayor 
+# o igual a 70 y menor que 90, imprime "Bueno", si es mayor o igual a 50 y 
+# menor que 70, imprime "Suficiente", y si es menor que 50, imprime "Insuficiente".
+
+
+
+
+
+
+
+# Un almacén da un descuento del 15% si la compra del cliente supera los 1000 Euros. 
+# Escribe un programa que pida el total de la compra y calcule el descuento 
+# (si aplica) y el total a pagar.
+
+total_compra = float(input("Ingrese el total de su compra:"))
+if total_compra > 1000:
+    descuento = total_compra * 0.15
+    total_con_descuento = total_compra - descuento
+    print("Congrats! Tu compra supera los 1000euros y tiene un descuento del 15%, es decir, de {}. Por lo que su compra es {} euros.".format(descuento,total_con_descuento))
+else:
+    print("Tienes que comprar mas. si superas los 1000euros tendras un descuento del 15%. Lo sentimos, tu compra no tiene descuento")

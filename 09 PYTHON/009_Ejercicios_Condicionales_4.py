@@ -24,3 +24,12 @@ else:
     # Redondea el total de la compra a dos decimales
     total_compra_redondeado = round(total_compra, 2)
     print(f"No se aplicó descuento, total a pagar: ${total_compra_redondeado}")
+
+#yo
+total_compra = float(input("Ingrese el total de su compra:"))
+if total_compra > 1000:
+    descuento = total_compra * 0.15
+    total_con_descuento = total_compra - descuento
+    print("Congrats! Tu compra supera los 1000euros y tiene un descuento del 15%, es decir, de {}. Por lo que su compra es {} euros.".format(descuento,total_con_descuento))
+else:
+    print("Tienes que comprar mas. si superas los 1000euros tendras un descuento del 15%. Lo sentimos, tu compra no tiene descuento")

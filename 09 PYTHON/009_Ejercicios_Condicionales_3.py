@@ -14,3 +14,14 @@ elif calificacion >= 50:
     print("Suficiente")
 else:
     print("Insuficiente")
+
+#yo
+calificacion = int(input("Ingresa tu nota:"))
+if calificacion >= 90: 
+    print("Excelente")
+elif 90 > calificacion >=70:
+    print("Bueno")
+elif 70 > calificacion >=50:   
+    print("Suficiente")
+else: 
+    print("Insuficiente")
