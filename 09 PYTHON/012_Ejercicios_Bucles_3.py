@@ -13,5 +13,10 @@ for caracter in texto:
 print(f"La letra 'a' aparece {contador} veces en la palabra {texto}.")
 
 
-
-
+#yo
+palabra = "banana"
+count = 0
+for caracter in palabra:
+    if caracter == "a":
+        count +=1
+print(f"El caracter a en la palabra {palabra} se encuentra {count} veces.")

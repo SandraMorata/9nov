@@ -11,4 +11,13 @@ while contador <= n:
     contador += 1
 
 
+#yo
+n = int(input("Introduce un numero:"))
+contador = 1
+while contador <=n:
+    print (contador)
+    contador += 1
+
+    
+
 

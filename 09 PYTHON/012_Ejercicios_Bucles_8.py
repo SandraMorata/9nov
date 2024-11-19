@@ -11,6 +11,10 @@ while numero != 5:
 print("¡Número 5 encontrado!")
 
 
-
+#yo
+numero = int(input("Introduce un numero:"))
+while numero !=5:
+    numero = int(input("Introduce un numero:"))
+print("Numero 5 encontrado")
 
 

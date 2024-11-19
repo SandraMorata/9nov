@@ -15,3 +15,10 @@ print("Edad válida introducida:", edad)
 
 
 
+#yo
+edad = int(input("Introduce tu edad:"))
+while 100 < edad < 0:
+    print("La edad introducida no es valida.") 
+    edad = int(input("Introduce tu edad:"))
+else:
+    "Gracias, tu edad ha sido validada"

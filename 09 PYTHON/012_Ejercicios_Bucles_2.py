@@ -10,6 +10,9 @@ for numero in range(1, 11):
 print("Cuadrados de los números del 1 al 10:", cuadrados)
 
 
-
-
+#yo
+cuadrados = []
+for numero in range (1,11):
+    cuadrados.append (numero **2)
+print("Los cuadrados de los numeros del 1 al 10 es" , cuadrados)
 

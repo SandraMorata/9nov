@@ -13,3 +13,12 @@ for i in range(1, 11):
 
 
 
+#yo
+numero = 7
+numero8 = 8
+for i in range(0,11):
+    resultado = (i*numero)
+    print(f"{numero} * {i} = {resultado}")
+
+    resultado8 = (i*numero8)
+    print(f"La tabla del 8 es:n\ {numero8}) * {i} = {resultado8}")
