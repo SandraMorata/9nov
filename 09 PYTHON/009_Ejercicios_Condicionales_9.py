@@ -11,3 +11,12 @@ else:
         print("Tus ingresos son medios.")
     else:
         print("Tus ingresos son altos.")
+
+#yo
+ingresos = float(input("Introduce aqui tus ingresos en Euros:"))
+if ingresos > 100000:
+    print("tus ingresos son altos")
+elif 30000 <= ingresos <= 100000:
+    print("Tus ingesos son medios")
+else:
+    print("tus ingresos son bajos")

@@ -15,3 +15,12 @@ else:
         print("Un suéter ligero sería adecuado.")
     else:
         print("Es un buen día para llevar camiseta.")
+
+#yo
+temperatura = float(input("Introduce la temperatura actual:"))
+if temperatura < 10:
+    print("Ay que frio! ponte abrigo y bufuanda")
+elif 10 <= temperatura <= 20:
+    print("ponte un sueter y ve ligero")
+else:
+    print("con una camista vas bien")

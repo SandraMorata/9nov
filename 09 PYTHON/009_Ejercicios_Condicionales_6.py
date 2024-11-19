@@ -18,3 +18,14 @@ else:
             print("Eres un adulto.")
         else:
             print("Eres un adulto mayor.")
+
+#yo
+edad = int(input("Introduce tu edad:"))
+if edad < 13: 
+    print ("Nino")
+elif 13 <= edad <= 19:
+    print ("Adolescente")
+elif 20 <= edad <= 64:
+    print ("Adulto")
+else:
+    print ("Adulto mayor")

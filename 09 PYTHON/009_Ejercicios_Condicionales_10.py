@@ -15,3 +15,17 @@ else:
         print(f"El total después del descuento es: ${total:.2f}")
     else:
         print(f"No hay descuento. El total es: ${compra:.2f}")
+
+
+#yo
+√compra = float(input("Introduce el precio de tu compra en dolares:"))
+if compra > 500:
+    descuento = compra * 0.20
+    compra_total = compra - descuento
+    print("congrats, tu compra tiene un descuento de ${:.2f} y se queda en ${:.2f}.".format(descuento,compra_total))
+elif compra > 100:
+    descuento = compra * 0.10
+    compra_total = compra - descuento
+    print("congrats, tu compra tiene un descuento de ${:.2f} y se queda en ${:.2f}.".format(descuento,compra_total))
+else:
+    print("no hay descuento")

@@ -26,10 +26,74 @@
 # Escribe un programa que pida el total de la compra y calcule el descuento 
 # (si aplica) y el total a pagar.
 
-total_compra = float(input("Ingrese el total de su compra:"))
-if total_compra > 1000:
-    descuento = total_compra * 0.15
-    total_con_descuento = total_compra - descuento
-    print("Congrats! Tu compra supera los 1000euros y tiene un descuento del 15%, es decir, de {}. Por lo que su compra es {} euros.".format(descuento,total_con_descuento))
-else:
-    print("Tienes que comprar mas. si superas los 1000euros tendras un descuento del 15%. Lo sentimos, tu compra no tiene descuento")
+
+
+
+
+
+
+
+# Escribe un programa que pida al usuario un número del 1 al 7 y muestre el día 
+# de la semana correspondiente. Si el número no está en ese rango, debe 
+# indicar que el número es inválido.
+
+
+
+
+
+
+
+
+
+
+
+# Escribe un programa que pida la edad del usuario y clasifique a las personas en diferentes categorías (niño, adolescente, adulto, adulto mayor). Supón los siguientes rangos de edad:
+
+# Niño: Menos de 13 años.
+# Adolescente: De 13 a 19 años.
+# Adulto: De 20 a 64 años.
+# Adulto mayor: 65 años o más.
+
+
+
+
+
+
+# Desarrolla un programa que solicite la calificación de un examen (0 a 100) 
+# y devuelva el rango de desempeño basado en la puntuación: insuficiente, 
+# suficiente, bien, muy bien, o excelente.
+
+
+
+
+
+
+
+
+
+
+# Escribe un programa que sugiera qué ponerse basado en la temperatura actual 
+# (en grados Celsius) que el usuario introduce. Considera:
+
+# Menos de 10°C: Abrigo y bufanda.
+# De 10°C a 20°C: Suéter ligero.
+# Más de 20°C: Camiseta.
+
+
+
+
+
+# Programa un sistema que categorice los ingresos anuales de una persona 
+# como 'bajo', 'medio' o 'alto'. Define tú mismo los límites de cada categoría.
+
+
+
+
+
+
+# Una tienda ofrece descuentos basados en el total de compra. 
+# Si la compra es mayor a $100, el descuento es del 10%. Si es mayor a $500, 
+# el descuento es del 20%. Crea un programa que calcule el total a pagar 
+# después del descuento.
+
+

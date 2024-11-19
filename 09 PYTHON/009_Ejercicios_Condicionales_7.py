@@ -18,3 +18,15 @@ else:
                 print("Muy bien")
             else:
                 print("Excelente")
+
+#yo
+nota = int(input("Introduce tu nota:"))
+if nota < 0 or nota > 100:
+    print("Nota no valida. Introduce tu nota (del 0 al 100):")
+else:
+    if nota < 50:
+        print ("insuficiente")
+    elif 50 <= nota < 60:
+        print ("bien")
+    else:
+        print ("excelente")
