@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+    
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1a0033; /* Changed to purple */
+      overflow: hidden;
+      font-family: 'Audiowide', cursive;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .crt-effect {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+                  linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+      background-size: 100% 2px, 3px 100%;
+    }
+    
+    .grid {
+      position: fixed;
+      width: 200%;
+      height: 200%;
+      top: -50%;
+      left: -50%;
+      background: 
+        linear-gradient(transparent 65%, rgba(0, 231, 255, 0.3) 75%, #0e1111 80%, transparent 85%),
+        linear-gradient(90deg, transparent 65%, rgba(0, 231, 255, 0.3) 75%, #0e1111 80%, transparent 85%);
+      background-size: 30px 30px;
+      animation: backgroundMove 10s linear infinite;
+      transform: rotateX(45deg);
+    }
+    
+    .carousel-container {
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      transform-style: preserve-3d;
+      transform: perspective(1000px) rotateX(10deg);
+    }
+    
+    .carousel-row {
+      white-space: nowrap;
+      overflow: hidden;
+      display: flex;
+      padding: 10px 0;
+      position: relative;
+      transform-style: preserve-3d;
+    }
+    
+    .carousel-content {
+      display: inline-block;
+      animation-duration: 30s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    
+    .row1 .carousel-content, .row3 .carousel-content {
+      animation-name: moveLeft;
+    }
+    
+    .row2 .carousel-content {
+      animation-name: moveRight;
+    }
+    
+    .carousel-item {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 5px 15px;
+      margin: 0 15px;
+      position: relative;
+      animation: textFlicker 1.5s infinite alternate;
+    }
+
+    .row1 .carousel-item {
+      color: #ff00ff;
+      text-shadow: 
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 15px #ff00ff;
+    }
+
+    .row2 .carousel-item {
+      color: #00ff00;
+      text-shadow: 
+        0 0 5px #00ff00,
+        0 0 10px #00ff00,
+        0 0 15px #00ff00;
+    }
+
+    .row3 .carousel-item {
+      color: #00ffff;
+      text-shadow: 
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 15px #00ffff;
+    }
+    
+    .carousel-item::before {
+      content: '//';
+      position: absolute;
+      right: -25px;
+      color: rgba(255,255,255,0.5);
+    }
+    
+    @keyframes moveLeft {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    
+    @keyframes moveRight {
+      from { transform: translateX(-50%); }
+      to { transform: translateX(0); }
+    }
+
+    @keyframes backgroundMove {
+      from { transform: rotateX(45deg) translateY(0); }
+      to { transform: rotateX(45deg) translateY(30px); }
+    }
+
+    @keyframes textFlicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: .99;
+      }
+      20%, 24%, 55% {
+        opacity: 0.5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="crt-effect"></div>
+  <div class="carousel-container">
+    <div class="carousel-row row1">
+      <div class="carousel-content">
+        <span class="carousel-item">Paid Search</span><span class="carousel-item">Meta Ads</span><span class="carousel-item">Algorithm</span><span class="carousel-item">Domo</span><span class="carousel-item">Spotify Ads</span><span class="carousel-item">MultiChannel</span><span class="carousel-item">Real Time</span><span class="carousel-item">SEM</span>
+        <span class="carousel-item">Paid Search</span><span class="carousel-item">Meta Ads</span><span class="carousel-item">Algorithm</span><span class="carousel-item">Domo</span><span class="carousel-item">Spotify Ads</span><span class="carousel-item">MultiChannel</span><span class="carousel-item">Real Time</span><span class="carousel-item">SEM</span>
+      </div>
+    </div>
+    <div class="carousel-row row2">
+      <div class="carousel-content">
+        <span class="carousel-item">TikTok Ads</span><span class="carousel-item">Looker Studio</span><span class="carousel-item">Machine Learning</span><span class="carousel-item">Instagram Ads</span><span class="carousel-item">Google Analytics 4</span><span class="carousel-item">Search Ads 360</span><span class="carousel-item">Similar Web</span>
+        <span class="carousel-item">TikTok Ads</span><span class="carousel-item">Looker Studio</span><span class="carousel-item">Machine Learning</span><span class="carousel-item">Instagram Ads</span><span class="carousel-item">Google Analytics 4</span><span class="carousel-item">Search Ads 360</span><span class="carousel-item">Similar Web</span>
+      </div>
+    </div>
+    <div class="carousel-row row3">
+      <div class="carousel-content">
+        <span class="carousel-item">Facebook Ads</span><span class="carousel-item">Pinterest</span><span class="carousel-item">Bing Ads</span><span class="carousel-item">Discovery Ads</span><span class="carousel-item">IA</span><span class="carousel-item">GDN Ads</span><span class="carousel-item">YouTube Ads</span><span class="carousel-item">Automation</span>
+        <span class="carousel-item">Facebook Ads</span><span class="carousel-item">Pinterest</span><span class="carousel-item">Bing Ads</span><span class="carousel-item">Discovery Ads</span><span class="carousel-item">IA</span><span class="carousel-item">GDN Ads</span><span class="carousel-item">YouTube Ads</span><span class="carousel-item">Automation</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

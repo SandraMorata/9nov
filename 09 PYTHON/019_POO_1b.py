@@ -1,10 +1,10 @@
 # POO
 
 # CREACIÓN DE UNA CLASE
-class Usuario():
-    # Declaración de atributos
+class Usuario(): #primera mayuscuala x convencion
+    # Declaración de atributos (variables)
     nombre = "Angel"
-    __edad = 47
+    __edad = 47 #__ significa que es privado. la variable se cambia baja nuestras condiciones. accedes x mi metodo
     login = "admin"
     password = "1234"
     email = "angel@loquesea.com"
