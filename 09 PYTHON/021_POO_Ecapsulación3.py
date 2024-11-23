@@ -33,3 +33,7 @@ persona1.nombre = 'Juan Carlos'
 print(persona1.nombre)
 # persona1._nombre = 'Cambio'
 # print(persona1._nombre)
+
+
+
+
