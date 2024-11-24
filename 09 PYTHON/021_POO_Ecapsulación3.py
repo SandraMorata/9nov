@@ -37,3 +37,27 @@ print(persona1.nombre)
 
 
 
+
+
+
+class Persona
+
+    def __init__ (self,nombre,apellido,edad):
+        self.__nombre = nombre
+        self.apellido = apellido
+        self.edad = edad
+    
+    @property
+    def get_nombre(self):
+        return self.__nombre
+
+    @nombre.setter
+    def setter_nombre(self, self.__nombre):
+        self.__nombre = otro nombre
+
+    def mostrar_detalles(self):
+        print(f"Persona: {self.__nombre}, {self.apellido}, {self.edad}")
+
+    Yo = Persona("Sandra","Morata",45)
+    Yo.nombre + "Nani"
+    print(Yo.nombre)    

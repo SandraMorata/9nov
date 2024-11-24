@@ -1,40 +1,46 @@
-class Persona:
-    def __init__ (self, nombre, apellido, edad):
-        self.__nombre = nombre
-        self.__apellido = apellido
-        self.__edad = edad
+class Libro:
+    def __init__(self, titulo, autor, anio):
+        self.titulo = titulo
+        self.autor = autor
+        self.anio = anio
 
-    @property
-    def nombre(self):
-        return self.__nombre
+class Biblioteca:
+    def __init__(self):
+        self.libros = []
 
-    @nombre.setter
-    def nombre(self, nuevo_nombre):
-        if nuevo_nombre.strip():
-            self.__nombre = nuevo_nombre
+    def agregar_libro(self, libro):
+        self.libros.append(libro)
+        print(f"Se ha agregado el libro '{libro.titulo}' a la biblioteca.")
+
+    def mostrar_libros(self):
+        if self.libros:
+            print("Libros en la biblioteca:")
+            for libro in self.libros:
+                print(f"Libro: {libro.titulo}, {libro.autor}, {libro.anio}")
         else:
-            raise ValueError("Nombre no puede quedar vacio")
-                             
-    @property
-    def edad (self):
-        return self.__edad
-    
-    @edad.setter
-    def edad (self, nueva_edad):
-        if nueva_edad > 0:
-            self.__edad = nueva_edad
-        else:
-            raise ValueError ("Debe ser un numero positivo")
-        
-    def mostrar_detalles(self):
-        #print("{} {} {} a;os".format(self__nombre, self__apellido, self_edad))
-        print(f"{self.__nombre} {self.__apellido}, {self.__edad} a;os")
+            print("No hay libros en la biblioteca.")
 
-persona1 = Persona("Juan", "Perez", 30)
-print(persona1.nombre)
-print(persona1.edad)
-persona1.nombre = "Juan Carlos"
-persona1.edad=35
-print(persona1.mostrar_detalles())
-        
-    
+    def buscar_libro(self, titulo):
+        for libro in self.libros:
+            if libro.titulo.lower() == titulo.lower():
+                print(f"Libro encontrado: '{libro.titulo}' por {libro.autor} ({libro.anio})")
+                return  # Salir del método si se encuentra el libro
+        else:
+            print(f"El libro '{titulo}' no está en la biblioteca.")
+
+# Crear instancias de libros
+libro1 = Libro("1984", "George Orwell", 1949)
+libro2 = Libro("Cien años de soledad", "Gabriel García Márquez", 1967)
+libro3 = Libro("Los 3 cerditos", "Desire Diez", 2024)
+
+# Crear biblioteca e interactuar con ella
+biblioteca_centro = Biblioteca()
+biblioteca_centro.agregar_libro(libro1)
+biblioteca_centro.agregar_libro(libro2)
+biblioteca_centro.agregar_libro(libro3)
+
+biblioteca_centro.mostrar_libros()
+
+# Buscar libros
+biblioteca_centro.buscar_libro("1984")
+biblioteca_centro.buscar_libro("El principito")
