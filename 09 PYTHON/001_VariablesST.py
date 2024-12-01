@@ -74,3 +74,5 @@ a, b, c = '3', '1.2', 'Sandra'
 
 ¿Cómo se verifica el tipo de una variable en Python?
 print(type(n_numero))
+
+
